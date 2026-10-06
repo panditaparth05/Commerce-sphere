@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px; 
-  background-color: #050517;
+  background-color: #222527;
 }
 
 .logo {
@@ -27,7 +27,7 @@ body {
   background-color: #EFC88B ;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px#222527;
   width: 100%;
   max-width: 380px;
 }
@@ -115,3 +115,7 @@ body {
   text-decoration: underline;
   background-color: #F4E3B2;
 }
+
+
+
+

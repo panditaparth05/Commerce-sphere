@@ -1,0 +1,266 @@
+/* --- Global Styles & Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #222527;
+    color: #CF5C36;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* --- Navigation --- */
+.navbar {
+    background-color: #222527;
+    border-bottom: 1px solid #a4acb7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 18px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #CF5C36;
+}
+
+.logo span {
+    color: #CF5C36;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: #CF5C36;
+}
+
+/* --- Buttons & Badges --- */
+.btn {
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #CF5C36;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #EFC88B;
+}
+
+.btn-light {
+    background-color: #CF5C36;
+    color: #222527;
+}
+
+.btn-light:hover {
+    background-color: #EFC88B;
+}
+
+.badge {
+    background-color: #222527;
+    color: #CF5C36;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #1e293b 0%, #222527 100%);
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Section Formatting --- */
+.services-section, .process-section, .tech-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+/* --- Services Grid --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #CF5C36;
+}
+
+.service-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* --- Process Section --- */
+.process-section {
+    background-color: #222527;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    background-color: #1e293b;
+    padding: 25px 20px;
+    border-radius: 8px;
+    border-top: 3px solid #CF5C36;
+    text-align: center;
+}
+
+.step-num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #CF5C36;
+    margin-bottom: 10px;
+}
+
+.step h4 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* --- Tech Stack --- */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tech-tags span {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #0b1120;
+    padding: 60px 0 30px 0;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.copyright {
+    margin-top: 50px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 2.1rem;
+    }
+}

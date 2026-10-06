@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1f22;
+    color: #e0e8e8;
+    line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes logo to the left and links to the right */
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Adds space between each nav link */
+  list-style: none;
+}
+.logo {
+    font-size: 1.9rem;
+    color: #CF5C36;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #a0c6c8;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: #33d6e0;
+    border-bottom: 2px solid coral;
+    padding-bottom: 2px;
+}
+
+
+.pichewala {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222527;
+    padding: 60px 80px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.piche {
+    flex: 1 1 300px;
+    color: #ffffff;
+}
+
+.piche h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    white-space: pre-line;
+    letter-spacing: 1.5px;
+}
+
+
+.truckji {
+    flex: 1 1 400px;
+    text-align: right;
+}
+
+.truckji img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 50px 40px;
+    background-color: #101214;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #22272b;
+    border-radius: 16px;
+    padding: 30px 25px;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+}
+
+.icon span {
+    font-size: 3rem;
+    color: #33d6e0;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service-box h2 {
+    color: #33d6e0;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.service-box p {
+    color: #a0c6c8;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 900px) {
+    .pichewala {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .piche {
+        order: 2;
+        flex: auto;
+    }
+
+    .truckji {
+        order: 1;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+
+.services-header {
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    background-color: #222527;
+    color: #33d6e0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.services-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.services-header p {
+    font-size: 1.25rem;
+    color: #a0c6c8;
+    margin-top: 0;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px 60px 20px;
+    background-color: #101214;
+}
+
+.services-list .service-box {
+    max-width: 300px;
+    flex: 1 1 280px;
+    background-color: #22272b;
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.services-list .service-box:hover {
+    transform: translateY(-8px);
+}
+
+.services-list .service-box .icon span {
+    font-size: 3.5rem;
+    color: #33d6e0;
+    margin-bottom: 15px;
+}
+
+.services-list .service-box h2 {
+    color: #33d6e0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.services-list .service-box p {
+    color: #a0c6c8;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
